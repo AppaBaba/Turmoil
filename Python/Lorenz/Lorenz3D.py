@@ -40,7 +40,7 @@ for i in range(TimeEvolving):
     yv[i + 1] = yv[i] + (dy * DeltaTime)
     zv[i + 1] = zv[i] + (dz * DeltaTime)
 
-ax = figure().add_subplot(projection='3d')
+ax = figure(facecolor = 'black').add_subplot(projection='3d')
 ax.plot(xv, yv, zv, color = 'green', lw = 0.5)
 ax.set_facecolor('Black')
 axis('off')
